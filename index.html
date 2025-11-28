@@ -6,16 +6,8 @@
   <title>plasticcube</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg: #000000;
-      --text: #f5f5f5;
-      --muted: #c7c7c7;
-      --accent: #75ffc1;
-      --accent-dark: #24c27d;
-    }
-
     * {
       box-sizing: border-box;
     }
@@ -23,129 +15,25 @@
     body {
       margin: 0;
       min-height: 100vh;
-      background: var(--bg);
-      color: var(--text);
-      font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
-
-    main {
-      position: relative;
-      min-height: 100vh;
       display: flex;
-      align-items: center;
       justify-content: center;
-      padding: 4rem 1.5rem;
-    }
-
-    .glow {
-      position: absolute;
-      width: 40vw;
-      height: 40vw;
-      border-radius: 50%;
-      filter: blur(120px);
-      opacity: 0.6;
-      pointer-events: none;
-    }
-
-    .glow-a {
-      background: radial-gradient(circle at 30% 30%, var(--accent), transparent 60%);
-      top: -10%;
-      left: -10%;
-    }
-
-    .glow-b {
-      background: radial-gradient(circle at 70% 70%, var(--accent-dark), transparent 55%);
-      bottom: -15%;
-      right: -5%;
-    }
-
-    .container {
-      position: relative;
-      max-width: 720px;
-      z-index: 1;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      text-transform: uppercase;
-      letter-spacing: 0.2rem;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-
-    .eyebrow::before {
-      content: "";
-      width: 40px;
-      height: 1px;
-      background: var(--accent);
+      align-items: flex-start;
+      padding-top: 33vh;
+      background: #000;
+      color: #fff;
+      font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+      letter-spacing: 0.08em;
     }
 
     h1 {
-      margin: 1rem 0 1.25rem;
-      font-size: clamp(2.4rem, 4vw, 3.5rem);
-      letter-spacing: -0.04em;
-      line-height: 1.1;
-    }
-
-    p {
-      margin: 0 0 1.5rem;
-      color: var(--muted);
-      font-size: 1.05rem;
-      max-width: 38ch;
-    }
-
-    .actions {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .cta {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.85rem 1.4rem;
-      border: 1px solid var(--text);
-      color: var(--text);
-      text-decoration: none;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      border-radius: 999px;
-      transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
-    }
-
-    .cta:hover {
-      background: var(--text);
-      color: var(--bg);
-      border-color: var(--text);
-      transform: translateY(-1px);
-    }
-
-    .note {
-      color: var(--muted);
-      font-size: 0.98rem;
+      margin: 0;
+      font-size: clamp(2.6rem, 6vw, 4rem);
+      font-weight: 500;
+      text-transform: lowercase;
     }
   </style>
 </head>
 <body>
-  <main>
-    <div class="glow glow-a"></div>
-    <div class="glow glow-b"></div>
-
-    <div class="container">
-      <div class="eyebrow">plasticcube</div>
-      <h1>Sharp, minimal digital experiences built with intent.</h1>
-      <p>Designing and developing polished web experiences that balance clarity, performance, and bold personality.</p>
-      <div class="actions">
-        <a class="cta" href="mailto:hello@plasticcube.com">Start a project</a>
-        <span class="note">New collaborations open this season.</span>
-      </div>
-    </div>
-  </main>
+  <h1>plasticcube</h1>
 </body>
 </html>
