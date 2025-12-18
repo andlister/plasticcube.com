@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>plasticcube</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
@@ -16,24 +17,37 @@
       margin: 0;
       min-height: 100vh;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: flex-start;
-      padding-top: 33vh;
+      padding: 24px;
       background: #000;
       color: #fff;
       font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
       letter-spacing: 0.08em;
     }
 
-    h1 {
-      margin: 0;
-      font-size: clamp(2.6rem, 6vw, 4rem);
-      font-weight: 500;
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
       text-transform: lowercase;
+    }
+
+    .logo i {
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+    }
+
+    .logo .wordmark {
+      font-size: clamp(1.1rem, 3vw, 1.5rem);
+      font-weight: 500;
+      letter-spacing: 0.12em;
     }
   </style>
 </head>
 <body>
-  <h1>plasticcube</h1>
+  <div class="logo">
+    <i class="fa-solid fa-cubes-stacked" aria-hidden="true"></i>
+    <span class="wordmark">plasticcube</span>
+  </div>
 </body>
 </html>
